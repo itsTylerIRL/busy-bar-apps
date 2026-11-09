@@ -15,6 +15,7 @@ JavaScript apps for the [BUSY Bar](https://busy.bar), each one a separate projec
 | [Breathe](breathe/) | ![Breathe](docs/breathe.png) | Guided breathing: box, 4-7-8 or coherent, with a bar that swells and shrinks |
 | [Commits](commits/) | ![Commits](docs/commits.png) | A GitHub contribution graph with today, week, streak and year |
 | [Headlines](headlines/) | ![Headlines](docs/headlines.png) | Hacker News stories, each title scrolling with the bar's native text scrolling |
+| [Delve](delve/) | ![Delve](docs/delve.png) | A turn-based dungeon crawler: ten generated levels, monsters, loot, and a dragon guarding the Crown |
 | [Safecracker](safe/) | ![Safecracker](docs/safe.png) | A wheel game: find a three-number combination by how hot the dial runs |
 | [Pillar](pillar/) | ![Pillar](docs/pillar.png) | A one-button timing game: drop each layer onto the last before it shrinks away |
 | [Serpent](serpent/) | ![Serpent](docs/serpent.png) | Snake, steered with the wheel |
