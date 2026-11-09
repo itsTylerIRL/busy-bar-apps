@@ -1,0 +1,9 @@
+{
+  "format_version": 1,
+  "id": "app.itstylerirl.decider",
+  "name": "Decider",
+  "version": "0.1.0",
+  "api_version": "27.12.0",
+  "description": "Oracle, coin and dice for small decisions",
+  "author": "itsTylerIRL"
+}

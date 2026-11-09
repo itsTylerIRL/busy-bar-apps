@@ -15,6 +15,7 @@ JavaScript apps for the [BUSY Bar](https://busy.bar), each one a separate projec
 | [Headlines](headlines/) | ![Headlines](docs/headlines.png) | Hacker News stories, each title scrolling with the bar's native text scrolling |
 | [Safecracker](safe/) | ![Safecracker](docs/safe.png) | A wheel game: find a three-number combination by how hot the dial runs |
 | [Pillar](pillar/) | ![Pillar](docs/pillar.png) | A one-button timing game: drop each layer onto the last before it shrinks away |
+| [Decider](decider/) | ![Decider](docs/decider.png) | An oracle, a coin, a d6 and a d20 for the small decisions |
 | [Life](life/) | ![Life](docs/life.png) | Conway's Game of Life with age-colored cells, a glider gun and other classic patterns |
 | [Vitals](vitals/) | ![Vitals](docs/vitals.png) | The bar's own Wi-Fi signal, internet round trip, battery and uptime, with history |
 

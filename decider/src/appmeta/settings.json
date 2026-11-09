@@ -1,0 +1,7 @@
+{
+  "format_version": 1,
+  "version": 1,
+  "fields": {
+    "sound": { "label": "Click when the roll lands", "type": "boolean", "default": true }
+  }
+}
