@@ -1,0 +1,30 @@
+{
+  "format_version": 1,
+  "version": 1,
+  "fields": {
+    "coins": {
+      "label": "Coins (Coinbase symbols)",
+      "type": "string",
+      "default": "BTC,ETH,LINK"
+    },
+    "timeframe": {
+      "label": "Default chart",
+      "type": "enum",
+      "default": "24H",
+      "options": [
+        { "value": "1H", "label": "1 hour" },
+        { "value": "24H", "label": "24 hours" },
+        { "value": "7D", "label": "7 days" },
+        { "value": "30D", "label": "30 days" }
+      ]
+    },
+    "rotate_seconds": {
+      "label": "Auto-rotate, seconds (0 = off)",
+      "type": "integer",
+      "default": 10,
+      "min": 0,
+      "max": 120,
+      "step": 5
+    }
+  }
+}

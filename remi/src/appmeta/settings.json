@@ -1,0 +1,13 @@
+{
+  "format_version": 1,
+  "version": 1,
+  "fields": {
+    "milady": { "label": "Milady", "type": "boolean", "default": true },
+    "remilio": { "label": "Remilio", "type": "boolean", "default": true },
+    "radbro": { "label": "Radbro", "type": "boolean", "default": true },
+    "schizo": { "label": "SchizoPosters", "type": "boolean", "default": true },
+    "yayo": { "label": "YAYO", "type": "boolean", "default": true },
+    "sound": { "label": "Chime on new sale", "type": "boolean", "default": true },
+    "usd": { "label": "Show USD value", "type": "boolean", "default": true }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "format_version": 1,
+  "version": 1,
+  "fields": {
+    "location": {
+      "label": "Home as lat,lon (blank = from IP)",
+      "type": "string",
+      "default": ""
+    },
+    "units": {
+      "label": "Units",
+      "type": "enum",
+      "default": "mi",
+      "options": [
+        { "value": "mi", "label": "Miles" },
+        { "value": "km", "label": "Kilometers" }
+      ]
+    }
+  }
+}
