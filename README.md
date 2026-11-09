@@ -8,9 +8,10 @@ JavaScript apps for the [BUSY Bar](https://busy.bar), each one a separate projec
 | [Remilia](remi/) | ![Remilia](docs/remi.png) | Live on-chain sales of Milady, Remilio, Radbro, SchizoPosters and YAYO |
 | [Sky](sky/) | ![Sky](docs/sky.png) | Weather now and for 7 days, each with a 24-hour chart |
 | [ISS](orbit/) | ![ISS](docs/orbit.png) | Where the space station is, on a world map with its next orbit |
+| [Luna](luna/) | ![Luna](docs/luna.png) | Moon phase, next full and new moon, sunrise and sunset, all computed on the bar |
 | [Commits](commits/) | ![Commits](docs/commits.png) | A GitHub contribution graph with today, week, streak and year |
 
-None of them need an API key.
+None of them need an API key, and Luna needs no network at all once it knows where you are.
 
 ## Building and installing
 
@@ -51,6 +52,8 @@ These apps were written against firmware 1.3.1 (HTTP API 27.14.0). A few things 
 - **An element id cannot change type.** Sending a `text` element under an id that was an `xpmbitmap` fails with a 400, so placeholder frames reuse the same types.
 - **Fonts:** `tiny` has no `°`; `small`, `bold`, `large` and `extra_large` do. `small` is about 5px per character, and `bold` about 7px per digit and 8px tall.
 - **`xpmbitmap` elements** take XPM2 text. That is how the icons, charts and maps here are drawn, generated in code on the device.
+- **Text can sit at y = −1.** `small` text anchored `top_left` at y 0 starts a row or two down, so it can touch a `bold` value below it; y −1 leaves a gap.
+- **Wi-Fi can drop DNS** for minutes at a time. Any lookup an app needs once, such as the location, has to retry, not just the regular polls.
 - **Simulated keys** (`POST /api/input`) drive the bar's menus but do not reach a running JS app.
 
 ## Screenshots

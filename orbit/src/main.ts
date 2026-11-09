@@ -231,6 +231,8 @@ function main(): void {
   let pollMs = POLL_MS;
 
   let pollTimer: ReturnType<typeof setTimeout> | undefined;
+  let homeTimer: ReturnType<typeof setTimeout> | undefined;
+  let homeRetryMs = 60_000;
   let cycleTimer: ReturnType<typeof setInterval> | undefined;
 
   const shown: Record<string, string> = {};
@@ -367,6 +369,7 @@ function main(): void {
     stopped = true;
     stopCycle();
     if (pollTimer !== undefined) clearTimeout(pollTimer);
+    if (homeTimer !== undefined) clearTimeout(homeTimer);
     try {
       const u = miles ? "mi" : "km";
       if (unitsChosen && localStorage.getItem("units") !== u) localStorage.setItem("units", u);
@@ -397,19 +400,28 @@ function main(): void {
 
   render();
   startCycle();
-  loadSettings(APP)
-    .then((v) => {
-      if (stopped) return;
-      if (!unitsChosen && (v.units === "mi" || v.units === "km")) miles = v.units === "mi";
-      return findHome(v.location).then((p) => {
-        home = p;
+  /** Settings, then home; a failed lookup (the bar's Wi-Fi drops DNS now and then) retries with backoff. */
+  function locate(): void {
+    homeTimer = undefined;
+    loadSettings(APP)
+      .then((v) => {
+        if (stopped) return;
+        if (!unitsChosen && (v.units === "mi" || v.units === "km")) miles = v.units === "mi";
+        return findHome(v.location).then((p) => {
+          home = p;
+        });
+      })
+      .catch((err) => {
+        report(err);
+        if (stopped) return;
+        homeTimer = setTimeout(locate, homeRetryMs);
+        homeRetryMs = Math.min(homeRetryMs * 2, 30 * 60_000);
+      })
+      .then(() => {
+        if (!stopped) render();
       });
-    })
-    .catch(report)
-    .then(() => {
-      if (stopped) return;
-      render();
-    });
+  }
+  locate();
   // Don't wait on home to show the station.
   poll();
 }

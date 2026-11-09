@@ -1,0 +1,9 @@
+{
+  "format_version": 1,
+  "id": "app.itstylerirl.luna",
+  "name": "Luna",
+  "version": "0.1.0",
+  "api_version": "27.12.0",
+  "description": "Moon phase and sun times",
+  "author": "itsTylerIRL"
+}

@@ -1,0 +1,20 @@
+{
+  "format_version": 1,
+  "version": 1,
+  "fields": {
+    "location": {
+      "label": "Location as lat,lon (blank = from IP)",
+      "type": "string",
+      "default": ""
+    },
+    "clock": {
+      "label": "Clock",
+      "type": "enum",
+      "default": "12",
+      "options": [
+        { "value": "12", "label": "12-hour" },
+        { "value": "24", "label": "24-hour" }
+      ]
+    }
+  }
+}
