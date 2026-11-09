@@ -1,0 +1,24 @@
+{
+  "format_version": 1,
+  "version": 1,
+  "fields": {
+    "feed": {
+      "label": "Earthquakes",
+      "type": "enum",
+      "default": "4.5_day",
+      "options": [
+        { "value": "4.5_day", "label": "M4.5+, past day" },
+        { "value": "2.5_day", "label": "M2.5+, past day" },
+        { "value": "significant_month", "label": "Significant, past month" }
+      ]
+    },
+    "alert": {
+      "label": "Flash the LED for a new quake of at least M",
+      "type": "integer",
+      "default": 6,
+      "min": 4,
+      "max": 9,
+      "step": 1
+    }
+  }
+}

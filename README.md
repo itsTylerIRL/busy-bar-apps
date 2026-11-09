@@ -8,6 +8,7 @@ JavaScript apps for the [BUSY Bar](https://busy.bar), each one a separate projec
 | [Remilia](remi/) | ![Remilia](docs/remi.png) | Live on-chain sales of Milady, Remilio, Radbro, SchizoPosters and YAYO |
 | [Sky](sky/) | ![Sky](docs/sky.png) | Weather now and for 7 days, each with a 24-hour chart |
 | [ISS](orbit/) | ![ISS](docs/orbit.png) | Where the space station is, on a world map with its next orbit |
+| [Quakes](quakes/) | ![Quakes](docs/quakes.png) | Recent earthquakes from USGS on a world map, colored by magnitude |
 | [Luna](luna/) | ![Luna](docs/luna.png) | Moon phase, next full and new moon, sunrise and sunset, all computed on the bar |
 | [Clock Out](clockout/) | ![Clock Out](docs/clockout.png) | A countdown to the end of the workday, then GO HOME |
 | [Commits](commits/) | ![Commits](docs/commits.png) | A GitHub contribution graph with today, week, streak and year |
