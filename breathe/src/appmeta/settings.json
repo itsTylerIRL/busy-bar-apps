@@ -1,0 +1,8 @@
+{
+  "format_version": 1,
+  "version": 1,
+  "fields": {
+    "minutes": { "label": "Session length, minutes", "type": "integer", "default": 3, "min": 1, "max": 20, "step": 1 },
+    "sound": { "label": "Chime at the end", "type": "boolean", "default": true }
+  }
+}

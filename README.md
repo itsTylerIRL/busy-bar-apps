@@ -12,6 +12,7 @@ JavaScript apps for the [BUSY Bar](https://busy.bar), each one a separate projec
 | [Luna](luna/) | ![Luna](docs/luna.png) | Moon phase, next full and new moon, sunrise and sunset, all computed on the bar |
 | [Stars](stars/) | ![Stars](docs/stars.png) | A live planetarium of the whole sky: stars, planets, moon and sun, with a time-lapse |
 | [Clock Out](clockout/) | ![Clock Out](docs/clockout.png) | A countdown to the end of the workday, then GO HOME |
+| [Breathe](breathe/) | ![Breathe](docs/breathe.png) | Guided breathing: box, 4-7-8 or coherent, with a bar that swells and shrinks |
 | [Commits](commits/) | ![Commits](docs/commits.png) | A GitHub contribution graph with today, week, streak and year |
 | [Headlines](headlines/) | ![Headlines](docs/headlines.png) | Hacker News stories, each title scrolling with the bar's native text scrolling |
 | [Safecracker](safe/) | ![Safecracker](docs/safe.png) | A wheel game: find a three-number combination by how hot the dial runs |
