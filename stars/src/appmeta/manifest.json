@@ -1,0 +1,9 @@
+{
+  "format_version": 1,
+  "id": "app.itstylerirl.stars",
+  "name": "Stars",
+  "version": "0.1.0",
+  "api_version": "27.12.0",
+  "description": "Live planetarium of the whole sky",
+  "author": "itsTylerIRL"
+}

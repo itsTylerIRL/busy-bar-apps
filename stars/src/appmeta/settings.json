@@ -1,0 +1,11 @@
+{
+  "format_version": 1,
+  "version": 1,
+  "fields": {
+    "location": {
+      "label": "Location as lat,lon (blank = from IP)",
+      "type": "string",
+      "default": ""
+    }
+  }
+}
