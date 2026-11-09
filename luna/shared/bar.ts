@@ -20,7 +20,7 @@ async function call(method: string, path: string, body?: unknown): Promise<unkno
   return text ? JSON.parse(text) : null;
 }
 
-/** Draws (or updates, by id) elements on the front screen. */
+/** Draws (or updates, by id) elements on the front screen. `led` blinks the status LED and must be #RRGGBBAA. */
 export function draw(app: string, elements: Element[], led?: string): Promise<unknown> {
   const body: Record<string, unknown> = { application_name: app, priority: PRIORITY, elements };
   if (led) body.led_notification_color = led;

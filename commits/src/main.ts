@@ -154,7 +154,7 @@ function main(): void {
       }
     }
     if (!changed.length) return;
-    const led = celebrate ? "#00FF40" : undefined;
+    const led = celebrate ? "#00FF40FF" : undefined;
     celebrate = false;
     drawing = true;
     draw(APP, changed, led)
