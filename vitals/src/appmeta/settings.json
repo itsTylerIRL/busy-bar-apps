@@ -1,0 +1,11 @@
+{
+  "format_version": 1,
+  "version": 1,
+  "fields": {
+    "ping_url": {
+      "label": "Internet check URL",
+      "type": "string",
+      "default": "http://cp.cloudflare.com/generate_204"
+    }
+  }
+}

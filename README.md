@@ -11,6 +11,7 @@ JavaScript apps for the [BUSY Bar](https://busy.bar), each one a separate projec
 | [Luna](luna/) | ![Luna](docs/luna.png) | Moon phase, next full and new moon, sunrise and sunset, all computed on the bar |
 | [Commits](commits/) | ![Commits](docs/commits.png) | A GitHub contribution graph with today, week, streak and year |
 | [Safecracker](safe/) | ![Safecracker](docs/safe.png) | A wheel game: find a three-number combination by how hot the dial runs |
+| [Vitals](vitals/) | ![Vitals](docs/vitals.png) | The bar's own Wi-Fi signal, internet round trip, battery and uptime, with history |
 
 None of them need an API key, and Luna needs no network at all once it knows where you are.
 
