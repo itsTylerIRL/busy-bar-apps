@@ -1,0 +1,26 @@
+{
+  "format_version": 1,
+  "version": 1,
+  "fields": {
+    "feed": {
+      "label": "Feed",
+      "type": "enum",
+      "default": "top",
+      "options": [
+        { "value": "top", "label": "Top" },
+        { "value": "best", "label": "Best" },
+        { "value": "new", "label": "New" },
+        { "value": "ask", "label": "Ask HN" },
+        { "value": "show", "label": "Show HN" }
+      ]
+    },
+    "count": {
+      "label": "Stories in the rotation",
+      "type": "integer",
+      "default": 30,
+      "min": 5,
+      "max": 50,
+      "step": 5
+    }
+  }
+}

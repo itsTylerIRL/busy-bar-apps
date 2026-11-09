@@ -10,6 +10,7 @@ JavaScript apps for the [BUSY Bar](https://busy.bar), each one a separate projec
 | [ISS](orbit/) | ![ISS](docs/orbit.png) | Where the space station is, on a world map with its next orbit |
 | [Luna](luna/) | ![Luna](docs/luna.png) | Moon phase, next full and new moon, sunrise and sunset, all computed on the bar |
 | [Commits](commits/) | ![Commits](docs/commits.png) | A GitHub contribution graph with today, week, streak and year |
+| [Headlines](headlines/) | ![Headlines](docs/headlines.png) | Hacker News stories, each title scrolling with the bar's native text scrolling |
 | [Safecracker](safe/) | ![Safecracker](docs/safe.png) | A wheel game: find a three-number combination by how hot the dial runs |
 | [Pillar](pillar/) | ![Pillar](docs/pillar.png) | A one-button timing game: drop each layer onto the last before it shrinks away |
 | [Vitals](vitals/) | ![Vitals](docs/vitals.png) | The bar's own Wi-Fi signal, internet round trip, battery and uptime, with history |
@@ -60,6 +61,7 @@ These apps were written against firmware 1.3.1 (HTTP API 27.14.0). A few things 
 - **LED colors must be `#RRGGBBAA`.** A 6-digit `led_notification_color` fails the whole draw with a 400 ("Invalid LED notification color"), so the screen silently stays on the last frame.
 - **Stock sounds:** `shared/sounds/` has only `calendar_event_starts.snd`, `calendar_reminder_ends.snd` and `volume_change.snd`.
 - **About 5 frames a second.** Each draw is an HTTP request to the bar's own web server and takes about 200 ms, so animation should be driven by the clock rather than by counting frames, and should send only the elements that move.
+- **Text scrolls natively.** A `text` element with `width`, `scroll_rate` (pixels per minute), `scroll_start_delay` and `scroll_repeat_delay` scrolls on its own as a looping marquee, with no draws from the app. 1800 px/min reads well.
 - **Simulated keys** (`POST /api/input`) drive the bar's menus but do not reach a running JS app.
 
 ## Screenshots
