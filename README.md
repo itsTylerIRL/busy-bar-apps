@@ -20,6 +20,7 @@ JavaScript apps for the [BUSY Bar](https://busy.bar), each one a separate projec
 | [Serpent](serpent/) | ![Serpent](docs/serpent.png) | Snake, steered with the wheel |
 | [Decider](decider/) | ![Decider](docs/decider.png) | An oracle, a coin, a d6 and a d20 for the small decisions |
 | [Life](life/) | ![Life](docs/life.png) | Conway's Game of Life with age-colored cells, a glider gun and other classic patterns |
+| [Fireworks](fireworks/) | ![Fireworks](docs/fireworks.png) | A fireworks show: peonies, rings and gold willows, with a finale on OK |
 | [Vitals](vitals/) | ![Vitals](docs/vitals.png) | The bar's own Wi-Fi signal, internet round trip, battery and uptime, with history |
 
 None of them need an API key, and Luna needs no network at all once it knows where you are.
