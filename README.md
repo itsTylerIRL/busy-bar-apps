@@ -13,6 +13,7 @@ JavaScript apps for the [BUSY Bar](https://busy.bar), each one a separate projec
 | [Headlines](headlines/) | ![Headlines](docs/headlines.png) | Hacker News stories, each title scrolling with the bar's native text scrolling |
 | [Safecracker](safe/) | ![Safecracker](docs/safe.png) | A wheel game: find a three-number combination by how hot the dial runs |
 | [Pillar](pillar/) | ![Pillar](docs/pillar.png) | A one-button timing game: drop each layer onto the last before it shrinks away |
+| [Life](life/) | ![Life](docs/life.png) | Conway's Game of Life with age-colored cells, a glider gun and other classic patterns |
 | [Vitals](vitals/) | ![Vitals](docs/vitals.png) | The bar's own Wi-Fi signal, internet round trip, battery and uptime, with history |
 
 None of them need an API key, and Luna needs no network at all once it knows where you are.
@@ -62,6 +63,8 @@ These apps were written against firmware 1.3.1 (HTTP API 27.14.0). A few things 
 - **Stock sounds:** `shared/sounds/` has only `calendar_event_starts.snd`, `calendar_reminder_ends.snd` and `volume_change.snd`.
 - **About 5 frames a second.** Each draw is an HTTP request to the bar's own web server and takes about 200 ms, so animation should be driven by the clock rather than by counting frames, and should send only the elements that move.
 - **Text scrolls natively.** A `text` element with `width`, `scroll_rate` (pixels per minute), `scroll_start_delay` and `scroll_repeat_delay` scrolls on its own as a looping marquee, with no draws from the app. 1800 px/min reads well.
+- **JavaScript is slow per operation.** A loop iteration costs about 7 µs, typed arrays are slower than plain arrays, and bitwise operations are cheap. Work on bits, not cells, and build strings from lookup tables (see [Life](life/)).
+- **The bar draws asynchronously.** Starting the next frame's work right after sending a draw overlaps the two.
 - **Simulated keys** (`POST /api/input`) drive the bar's menus but do not reach a running JS app.
 
 ## Screenshots
