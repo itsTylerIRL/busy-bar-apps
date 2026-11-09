@@ -9,6 +9,7 @@ JavaScript apps for the [BUSY Bar](https://busy.bar), each one a separate projec
 | [Sky](sky/) | ![Sky](docs/sky.png) | Weather now and for 7 days, each with a 24-hour chart |
 | [ISS](orbit/) | ![ISS](docs/orbit.png) | Where the space station is, on a world map with its next orbit |
 | [Luna](luna/) | ![Luna](docs/luna.png) | Moon phase, next full and new moon, sunrise and sunset, all computed on the bar |
+| [Clock Out](clockout/) | ![Clock Out](docs/clockout.png) | A countdown to the end of the workday, then GO HOME |
 | [Commits](commits/) | ![Commits](docs/commits.png) | A GitHub contribution graph with today, week, streak and year |
 | [Headlines](headlines/) | ![Headlines](docs/headlines.png) | Hacker News stories, each title scrolling with the bar's native text scrolling |
 | [Safecracker](safe/) | ![Safecracker](docs/safe.png) | A wheel game: find a three-number combination by how hot the dial runs |

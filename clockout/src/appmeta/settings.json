@@ -1,0 +1,25 @@
+{
+  "format_version": 1,
+  "version": 1,
+  "fields": {
+    "start": { "label": "Workday starts (HH:MM, 24-hour)", "type": "string", "default": "09:00" },
+    "end": { "label": "Workday ends (HH:MM, 24-hour)", "type": "string", "default": "17:00" },
+    "mon": { "label": "Monday", "type": "boolean", "default": true },
+    "tue": { "label": "Tuesday", "type": "boolean", "default": true },
+    "wed": { "label": "Wednesday", "type": "boolean", "default": true },
+    "thu": { "label": "Thursday", "type": "boolean", "default": true },
+    "fri": { "label": "Friday", "type": "boolean", "default": true },
+    "sat": { "label": "Saturday", "type": "boolean", "default": false },
+    "sun": { "label": "Sunday", "type": "boolean", "default": false },
+    "clock": {
+      "label": "Clock",
+      "type": "enum",
+      "default": "12",
+      "options": [
+        { "value": "12", "label": "12-hour" },
+        { "value": "24", "label": "24-hour" }
+      ]
+    },
+    "sound": { "label": "Chime at quitting time", "type": "boolean", "default": true }
+  }
+}

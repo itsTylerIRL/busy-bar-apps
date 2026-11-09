@@ -1,0 +1,9 @@
+{
+  "format_version": 1,
+  "id": "app.itstylerirl.clockout",
+  "name": "Clock Out",
+  "version": "0.1.0",
+  "api_version": "27.12.0",
+  "description": "Countdown to the end of the workday",
+  "author": "itsTylerIRL"
+}
